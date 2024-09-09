@@ -6,15 +6,8 @@ import { useLocation } from "react-router";
 import { ToolbarWrapper } from "../../../_metronic/layout/components/toolbar";
 import { Content } from "../../../_metronic/layout/components/content";
 import { FormDataContext } from "./components/settings/cards/FormDataContext";
-import { setLanguage } from "../../../_metronic/i18n/Metronici18n";
 import { FormattedMessage, useIntl } from "react-intl";
-import axios from "axios";
 import { PricingPlan } from "../../../_metronic/partials/modals/pricing_plans/PricingPlan";
-
-import { useLang } from "../../../_metronic/i18n/Metronici18n";
-import CurrencyConverter from "currency-converter-lt";
-import { useTranslation } from "react-i18next";
-import { Translation } from "react-i18next";
 
 import moment from "moment-timezone";
 
@@ -61,17 +54,17 @@ const AccountHeader: FC = () => {
   const location = useLocation();
   // const formData = useContext(FormDataContext);
   const { country, language, currency, timeZone } = useContext(FormDataContext);
-  console.log("currency value", currency);
+
   const regionTimeMoment = moment.tz(new Date(), timeZone);
   const regionTime = regionTimeMoment.format(" MM DD YYYY HH:mm:ss");
   // + regionTimeMoment.format("Z");
   let timeZone1 = "Asia/kolkata";
   const regionTimeMoment1 = moment.tz(new Date(), timeZone1);
   const createdTime = regionTimeMoment1.format(" MM DD YYYY HH:mm:ss");
-  const [i18n] = useTranslation("messages");
-  const { t } = useTranslation();
-  const [data, setData] = useState([]);
-  const [error, setError] = useState<string | null>(null);
+  // const [i18n] = useTranslation("messages");
+  // const { t } = useTranslation();
+  // const [data, setData] = useState([]);
+  // const [error, setError] = useState<string | null>(null);
   const { selectedPlan, setSelectedPlan, selectedPrice, setSelectedPrice } =
     useContext(FormDataContext);
   const { formatMessage } = useIntl();

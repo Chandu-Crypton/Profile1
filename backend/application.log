@@ -60,3 +60,25 @@
 2024-08-31 12:29:17 info: Language change detected from en to fr
 2024-08-31 12:29:18 debug: Data inserted successfully
 2024-08-31 12:29:18 info: Profile updated.
+2024-08-31 12:36:21 warn: Potentially invalid phone number format: 044 3276 454 935
+2024-08-31 12:36:21 info: Form data submitted successfully {avatar:media/avatars/300-1.jpg, fName:Max, lName:Smith, company:Keenthemes, contactPhone:044 3276 454 935, companySite:keenthemes.com, country:AT, language:en, timeZone:America/Lima, currency:GBP}
+2024-08-31 12:36:21 debug: Executing SQL query
+2024-08-31 12:36:21 info: Language change detected from fr to en
+2024-08-31 12:36:21 debug: Data inserted successfully
+2024-08-31 12:36:22 info: Profile updated.
+2024-09-09 09:10:40 warn: Potentially invalid phone number format: 044 3276 454 935
+2024-09-09 09:10:41 info: Form data submitted successfully {avatar:media/avatars/300-1.jpg, fName:Max, lName:Smith, company:Keenthemes, contactPhone:044 3276 454 935, companySite:keenthemes.com, country:AT, language:en, timeZone:Asia/Dubai, currency:USD}
+2024-09-09 09:10:41 debug: Executing SQL query
+2024-09-09 09:10:44 error: Error inserting data into the database: Can't add new command when connection is in closed state
+2024-09-09 09:10:44 info: Currency change detected from GBP to USD
+2024-09-09 09:10:44 info: Timezone change detected from America/Lima to Asia/Dubai
+2024-09-09 10:22:01 warn: Potentially invalid phone number format: 044 3276 454 935
+2024-09-09 10:22:01 info: Form data submitted successfully {avatar:media/avatars/300-1.jpg, fName:Max, lName:Smith, company:Keenthemes, contactPhone:044 3276 454 935, companySite:keenthemes.com, country:AT, language:hi, timeZone:Asia/Dubai, currency:USD}
+2024-09-09 10:22:01 debug: Executing SQL query
+2024-09-09 10:22:02 error: Error inserting data into the database: Can't add new command when connection is in closed state
+2024-09-09 10:22:02 info: Language change detected from en to hi
+2024-09-09 10:22:30 warn: Potentially invalid phone number format: 044 3276 454 935
+2024-09-09 10:22:30 info: Form data submitted successfully {avatar:media/avatars/300-1.jpg, fName:Max, lName:Smith, company:Keenthemes, contactPhone:044 3276 454 935, companySite:keenthemes.com, country:AT, language:en, timeZone:Asia/Dubai, currency:USD}
+2024-09-09 10:22:30 debug: Executing SQL query
+2024-09-09 10:22:30 error: Error inserting data into the database: Can't add new command when connection is in closed state
+2024-09-09 10:22:31 info: Language change detected from hi to en
